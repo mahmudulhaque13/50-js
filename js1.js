@@ -1,7 +1,5 @@
 //  A. Math & Basic Logic (1–8)
 
-// একটি সংখ্যা positive, negative না zero চেক করো
-
 // তিনটি সংখ্যার গড় (average) বের করো
 
 // Celsius থেকে Fahrenheit convert করো
@@ -32,7 +30,31 @@
 // console.log(result);
 
 // ========== 3.একটি সংখ্যা even না odd চেক করো
-const evenOdd = (num) =>
-  typeof num !== "number" ? "Invalid" : num % 2 === 0 ? "Even" : "Odd";
-const num = evenOdd(7);
+// const evenOdd = (num) =>
+//   typeof num !== "number" ? "Invalid" : num % 2 === 0 ? "Even" : "Odd";
+// const num = evenOdd();
+// console.log(num);
+
+// ========= 4.একটি সংখ্যা positive, negative না zero চেক করো =======
+const Char = (num) =>
+  typeof num !== "number"
+    ? "Invalid"
+    : num === 0
+      ? "zero"
+      : num < 0
+        ? "negative"
+        : "positive";
+const num = Char(0);
 console.log(num);
+
+// const Char = (num) =>
+//   typeof num !== "number"
+//     ? "Invalid"
+//     : num === 0
+//     ? "zero"
+//     : num < 0
+//     ? "negative"
+//     : "positive";
+
+// const result = Char(9);
+// console.log(result); // positive

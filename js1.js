@@ -1,7 +1,5 @@
 //  A. Math & Basic Logic (1–8)
 
-// একটি সংখ্যা even না odd চেক করো
-
 // একটি সংখ্যা positive, negative না zero চেক করো
 
 // তিনটি সংখ্যার গড় (average) বের করো
@@ -27,8 +25,14 @@
 // console.log(result);
 
 // ======= 2.দুটি সংখ্যার বিয়োগ, গুণ ও ভাগ বের করো =========
-const doMath = (x, y) => {
-  return `substruction=${x - y}, multiplication=${x * y}, divition=${x / y}`;
-};
-const result = doMath(6, 2);
-console.log(result);
+// const doMath = (x, y) => {
+//   return `substruction=${x - y}, multiplication=${x * y}, divition=${x / y}`;
+// };
+// const result = doMath(5, 10);
+// console.log(result);
+
+// ========== 3.একটি সংখ্যা even না odd চেক করো
+const evenOdd = (num) =>
+  typeof num !== "number" ? "Invalid" : num % 2 === 0 ? "Even" : "Odd";
+const num = evenOdd(7);
+console.log(num);

@@ -1,7 +1,5 @@
 //  A. Math & Basic Logic (1–8)
 
-// তিনটি সংখ্যার গড় (average) বের করো
-
 // Celsius থেকে Fahrenheit convert করো
 
 // Rectangle এর area বের করো
@@ -14,12 +12,6 @@
 //   return a + b;
 // }
 // const result = add(2, 3);
-// console.log(result);
-
-// const add = (a, b) => {
-//   return a + b;
-// };
-// const result = (4, 9);
 // console.log(result);
 
 // ======= 2.দুটি সংখ্যার বিয়োগ, গুণ ও ভাগ বের করো =========
@@ -36,13 +28,23 @@
 // console.log(num);
 
 // ========= 4.একটি সংখ্যা positive, negative না zero চেক করো =======
-const Char = (num) =>
-  typeof num !== "number"
-    ? "Invalid"
-    : num === 0
-      ? "zero"
-      : num < 0
-        ? "negative"
-        : "positive";
-const num = Char(0);
-console.log(num);
+// const Char = (num) =>
+//   typeof num !== "number"
+//     ? "Invalid"
+//     : num === 0
+//       ? "zero"
+//       : num < 0
+//         ? "negative"
+//         : "positive";
+// const num = Char(0);
+// console.log(num);
+
+// ======== 5.তিনটি সংখ্যার গড় (average) বের করো ========
+
+// function average(a, b, c) {
+//   return (a + b + c) / 3;
+// }
+
+// console.log(average(10, 20, 30)); // 20
+
+// ============ 6.Celsius থেকে Fahrenheit convert করো ==========

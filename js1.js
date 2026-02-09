@@ -46,15 +46,3 @@ const Char = (num) =>
         : "positive";
 const num = Char(0);
 console.log(num);
-
-// const Char = (num) =>
-//   typeof num !== "number"
-//     ? "Invalid"
-//     : num === 0
-//     ? "zero"
-//     : num < 0
-//     ? "negative"
-//     : "positive";
-
-// const result = Char(9);
-// console.log(result); // positive

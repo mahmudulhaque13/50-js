@@ -1,9 +1,5 @@
 //  A. Math & Basic Logic (1–8)
 
-// Celsius থেকে Fahrenheit convert করো
-
-// Rectangle এর area বের করো
-
 // একটি সংখ্যা 3 এবং 5 উভয় দিয়ে divisible কিনা চেক করো
 
 //====== 1.দুটি সংখ্যা যোগ করার একটি প্রোগ্রাম লেখো ======
@@ -41,10 +37,29 @@
 
 // ======== 5.তিনটি সংখ্যার গড় (average) বের করো ========
 
-// function average(a, b, c) {
-//   return (a + b + c) / 3;
-// }
-
-// console.log(average(10, 20, 30)); // 20
+// const average = (a, b, c) =>
+//   typeof a !== "number" ||
+//   typeof b !== "number" ||
+//   typeof c !== "number"
+//     ? "Invalid"
+//     : (a + b + c) / 3;
 
 // ============ 6.Celsius থেকে Fahrenheit convert করো ==========
+
+// function celsiusToFahrenheit(celsius) {
+//   if (typeof celsius !== "number") {
+//     return "Invalid";
+//   }
+//   return (celsius * 9) / 5 + 32;
+// }
+// console.log(celsiusToFahrenheit(20));
+
+// ======== 7.Rectangle এর area বের করো ============
+function rectangleArea(length, width) {
+  if (typeof length !== "number" || typeof width !== "number") {
+    return "Invalid input";
+  }
+  return length * width;
+}
+
+console.log(rectangleArea(8, 4));

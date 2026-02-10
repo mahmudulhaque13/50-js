@@ -1,7 +1,5 @@
 //  A. Math & Basic Logic (1–8)
 
-// একটি সংখ্যা 3 এবং 5 উভয় দিয়ে divisible কিনা চেক করো
-
 //====== 1.দুটি সংখ্যা যোগ করার একটি প্রোগ্রাম লেখো ======
 
 // function add(a, b) {
@@ -55,11 +53,21 @@
 // console.log(celsiusToFahrenheit(20));
 
 // ======== 7.Rectangle এর area বের করো ============
-function rectangleArea(length, width) {
-  if (typeof length !== "number" || typeof width !== "number") {
-    return "Invalid input";
+// function rectangleArea(length, width) {
+//   if (typeof length !== "number" || typeof width !== "number") {
+//     return "Invalid input";
+//   }
+//   return length * width;
+// }
+// console.log(rectangleArea(6, 6));
+
+//======= 8.একটি সংখ্যা 3 এবং 5 উভয় দিয়ে divisible কিনা চেক করো ========
+function divisibleBy3And5(num) {
+  if (typeof num !== "number") {
+    return "Invalid";
   }
-  return length * width;
+
+  return num % 3 === 0 && num % 5 === 0;
 }
 
-console.log(rectangleArea(8, 4));
+console.log(divisibleBy3And5(30));

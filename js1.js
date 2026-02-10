@@ -62,12 +62,12 @@
 // console.log(rectangleArea(6, 6));
 
 //======= 8.একটি সংখ্যা 3 এবং 5 উভয় দিয়ে divisible কিনা চেক করো ========
-function divisibleBy3And5(num) {
-  if (typeof num !== "number") {
-    return "Invalid";
-  }
+// function divisibleBy3And5(num) {
+//   if (typeof num !== "number") {
+//     return "Invalid";
+//   }
 
-  return num % 3 === 0 && num % 5 === 0;
-}
+//   return num % 3 === 0 && num % 5 === 0;
+// }
 
-console.log(divisibleBy3And5(30));
+// console.log(divisibleBy3And5(30));

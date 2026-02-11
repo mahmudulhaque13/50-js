@@ -40,16 +40,35 @@ console.log(result);
 // console.log(grade("90")); // Invalid
 
 // Leap year চেক করার প্রোগ্রাম লেখো
-const isLeap = (year) =>
-  typeof year !== "number"
-    ? "Invalid"
-    : (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
-      ? "Leap Year"
-      : "Not Leap Year";
+// const isLeap = (year) =>
+//   typeof year !== "number"
+//     ? "Invalid"
+//     : (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
+//       ? "Leap Year"
+//       : "Not Leap Year";
 
-console.log(isLeap(2024));
+// console.log(isLeap(2024));
 
 // তিনটি সংখ্যার মধ্যে সবচেয়ে বড়টা বের করো
+// const largest = (a, b, c) =>
+//   typeof a !== "number" || typeof b !== "number" || typeof c !== "number"
+//     ? "Invalid"
+//     : a >= b && a >= c
+//       ? a
+//       : b >= a && b >= c
+//         ? b
+//         : c;
+
+// console.log(largest(5, 12, 6));
+
+function findMax(a, b, c) {
+  if (typeof a !== "number" || typeof b !== "number" || typeof c !== "number") {
+    return "Invalid";
+  }
+  return Math.max(a, b, c);
+}
+
+console.log(findMax(7, 3, 11)); // 11
 
 // Login system বানাও (email && password চেক)
 

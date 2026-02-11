@@ -19,6 +19,25 @@ const result = bigOrSmall(101);
 console.log(result);
 
 // Student এর mark দিয়ে grade বের করো
+const grade = (mark) =>
+  typeof mark !== "number" || mark < 0 || mark > 100
+    ? "Invalid"
+    : mark >= 80
+      ? "A+"
+      : mark >= 70
+        ? "A"
+        : mark >= 60
+          ? "B"
+          : mark >= 50
+            ? "C"
+            : mark >= 40
+              ? "D"
+              : "F";
+
+console.log(grade(85)); // A+
+console.log(grade(72)); // A
+console.log(grade(35)); // F
+console.log(grade("90")); // Invalid
 
 // Leap year চেক করার প্রোগ্রাম লেখো
 

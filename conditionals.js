@@ -1,18 +1,22 @@
 // বয়স দিয়ে vote দিতে পারবে কিনা চেক করো
-function voter = (age) =>
-    typeof age !== "number"
-    ? "Invalid"
-    : age < 18
-      ? "not voter"
-      : "voter"
-const age = voter(16)
-console.log(age)
-        
+// const voter = (age) =>
+//   typeof age !== "number" ? "Invalid" : age < 18 ? "not voter" : "voter";
 
-
-    
+// const result = voter();
+// console.log(result);
 
 // একটি সংখ্যা বড় না ছোট 100 থেকে চেক করো
+
+const bigOrSmall = (num) =>
+  typeof num !== "number"
+    ? "Invalid"
+    : num === 100
+      ? "100"
+      : num < 100
+        ? "small"
+        : "big";
+const result = bigOrSmall(101);
+console.log(result);
 
 // Student এর mark দিয়ে grade বের করো
 

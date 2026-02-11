@@ -28,24 +28,29 @@
 // console.log("const c =", c); Error
 
 // ======== 10.একটি ভ্যারিয়েবলের type চেক করো (typeof) ========
-let a = 10;
-let b = "Hello";
-let c = true;
-let d = {};
-let e = [];
-let f = null;
-let g;
+// let a = 10;
+// let b = "Hello";
+// let c = true;
+// let d = {};
+// let e = [];
+// let f = null;
+// let g;
 
-console.log(typeof a); // number
-console.log(typeof b); // string
-console.log(typeof c); // boolean
-console.log(typeof d); // object
-console.log(typeof e); // object
-console.log(typeof f); // object
-console.log(typeof g); // undefined
+// console.log(typeof a); // number
+// console.log(typeof b); // string
+// console.log(typeof c); // boolean
+// console.log(typeof d); // object
+// console.log(typeof e); // object
+// console.log(typeof f); // object
+// console.log(typeof g); // undefined
 
-// string কে number এ convert করো
+// ============== 11.string কে number এ convert করো ===========
+// let str = "123";
+// let num = Number(str);
 
-// number কে string এ convert করো
+// console.log(num); // 123
+// console.log(typeof num); // number
+
+// ==========12.number কে string এ convert করো==========
 
 // NaN কিভাবে তৈরি হয় তার উদাহরণ দেখাও

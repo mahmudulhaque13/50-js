@@ -52,5 +52,61 @@
 // console.log(typeof num); // number
 
 // ==========12.number কে string এ convert করো==========
+// let num = 123;
+// let str = String(num);
 
-// NaN কিভাবে তৈরি হয় তার উদাহরণ দেখাও
+// console.log(str);        // "123"
+// console.log(typeof str); // string
+
+// let num = 456;
+// let str = num.toString();
+
+// console.log(str); // "456"
+
+// let num = 789;
+// let str = num + "";
+
+// console.log(str); // "789"
+
+// let num = 100;
+// let str = `${num}`;
+
+// console.log(str); // "100"
+
+// কোনটা কখন?
+// দরকার	ব্যবহার
+// safest way	String()
+// normal case	toString()
+// quick hack	num + ""
+// modern code	`${num}`
+
+//============== 13.NaN কিভাবে তৈরি হয় তার উদাহরণ দেখাও============
+// Number conversion fail হলে
+// let a = Number("Hello");
+// console.log(a);        // NaN
+// console.log(typeof a); // number ⚠️
+
+// লক্ষ্য করো, typeof NaN = "number"
+
+// 2️⃣ Invalid arithmetic operation
+// console.log("abc" / 2);   // NaN
+// console.log("abc" * 3);   // NaN
+// console.log(0 / 0);       // NaN
+
+// 3️⃣ parseInt/parseFloat fail হলে
+// console.log(parseInt("xyz"));     // NaN
+// console.log(parseFloat("abc123")); // NaN
+
+// 4️⃣ Math operation invalid হলে
+// console.log(Math.sqrt(-1)); // NaN
+
+// ✅ NaN চেক করার নিয়ম
+
+// == বা === দিয়ে চেক করা যাবে না!
+
+// let x = NaN;
+// console.log(x === NaN); // false
+
+// // সঠিক চেক
+// console.log(isNaN(x));  // true
+// console.log(Number.isNaN(x)); // true (recommended)

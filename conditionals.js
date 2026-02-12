@@ -61,15 +61,35 @@ console.log(result);
 
 // console.log(largest(5, 12, 6));
 
-function findMax(a, b, c) {
-  if (typeof a !== "number" || typeof b !== "number" || typeof c !== "number") {
-    return "Invalid";
-  }
-  return Math.max(a, b, c);
-}
+// function findMax(a, b, c) {
+//   if (typeof a !== "number" || typeof b !== "number" || typeof c !== "number") {
+//     return "Invalid";
+//   }
+//   return Math.max(a, b, c);
+// }
 
-console.log(findMax(7, 3, 11)); // 11
+// console.log(findMax(7, 3, 11)); // 11
 
 // Login system বানাও (email && password চেক)
+function login(email, password) {
+  if (!email || !password) {
+    return "Email and Password required ⚠️";
+  }
+
+  if (!email.includes("@")) {
+    return "Invalid Email format ❌";
+  }
+
+  const savedEmail = "admin@gmail.com";
+  const savedPassword = "123456";
+
+  if (email === savedEmail && password === savedPassword) {
+    return "Login Successful ✅";
+  }
+
+  return "Wrong credentials ❌";
+}
+
+console.log(login("admin@gmail.com", "123456"));
 
 // Ternary operator দিয়ে even/odd চেক করো

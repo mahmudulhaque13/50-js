@@ -7,16 +7,16 @@
 
 // একটি সংখ্যা বড় না ছোট 100 থেকে চেক করো
 
-const bigOrSmall = (num) =>
-  typeof num !== "number"
-    ? "Invalid"
-    : num === 100
-      ? "100"
-      : num < 100
-        ? "small"
-        : "big";
-const result = bigOrSmall(101);
-console.log(result);
+// const bigOrSmall = (num) =>
+//   typeof num !== "number"
+//     ? "Invalid"
+//     : num === 100
+//       ? "100"
+//       : num < 100
+//         ? "small"
+//         : "big";
+// const result = bigOrSmall(101);
+// console.log(result);
 
 // Student এর mark দিয়ে grade বের করো
 // const grade = (mark) =>
@@ -71,25 +71,34 @@ console.log(result);
 // console.log(findMax(7, 3, 11)); // 11
 
 // Login system বানাও (email && password চেক)
-function login(email, password) {
-  if (!email || !password) {
-    return "Email and Password required ⚠️";
-  }
+// function login(email, password) {
+//   if (!email || !password) {
+//     return "Email and Password required ⚠️";
+//   }
 
-  if (!email.includes("@")) {
-    return "Invalid Email format ❌";
-  }
+//   if (!email.includes("@")) {
+//     return "Invalid Email format ❌";
+//   }
 
-  const savedEmail = "admin@gmail.com";
-  const savedPassword = "123456";
+//   const savedEmail = "admin@gmail.com";
+//   const savedPassword = "123456";
 
-  if (email === savedEmail && password === savedPassword) {
-    return "Login Successful ✅";
-  }
+//   if (email === savedEmail && password === savedPassword) {
+//     return "Login Successful ✅";
+//   }
 
-  return "Wrong credentials ❌";
-}
+//   return "Wrong credentials ❌";
+// }
 
-console.log(login("admin@gmail.com", "123456"));
+// console.log(login("admin@gmail.com", "123456"));
 
 // Ternary operator দিয়ে even/odd চেক করো
+function checkEvenOdd(num) {
+  return typeof num !== "number"
+    ? "Invalid Input"
+    : num % 2 === 0
+      ? "Even"
+      : "Odd";
+}
+
+console.log(checkEvenOdd(38));

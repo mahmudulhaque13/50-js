@@ -93,12 +93,12 @@
 // console.log(login("admin@gmail.com", "123456"));
 
 // Ternary operator দিয়ে even/odd চেক করো
-function checkEvenOdd(num) {
-  return typeof num !== "number"
-    ? "Invalid Input"
-    : num % 2 === 0
-      ? "Even"
-      : "Odd";
-}
+// function checkEvenOdd(num) {
+//   return typeof num !== "number"
+//     ? "Invalid Input"
+//     : num % 2 === 0
+//       ? "Even"
+//       : "Odd";
+// }
 
-console.log(checkEvenOdd(38));
+// console.log(checkEvenOdd(38));

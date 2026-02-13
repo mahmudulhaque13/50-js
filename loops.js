@@ -15,11 +15,16 @@
 // }
 
 // 10 থেকে 1 পর্যন্ত reverse loop চালাও
-for (let i = 10; i >= 1; i--) {
-  console.log(i);
-}
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
 
 // একটি সংখ্যার নামতা print করো
+let number = 5;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(number + " x " + i + " = " + number * i);
+}
 
 // 1–100 এর মধ্যে 3 দিয়ে divisible সংখ্যা বের করো
 

@@ -68,10 +68,26 @@
 //   console.log(i);
 // }
 
-for (let i = 1; i <= 10; i++) {
-  if (i === 5) {
-    break; // এখানে loop বন্ধ হবে
-  }
+// for (let i = 1; i <= 10; i++) {
+//   if (i === 5) {
+//     break; // এখানে loop বন্ধ হবে
+//   }
 
-  console.log(i);
+//   console.log(i);
+// }
+
+//remove duplicates in sorted array.
+let dupArr = [1, 2, 3, 4, 1, 3];
+dupArr.sort((a, b) => a - b); // must be sorted first!! boring !!
+
+let i = 0; //last unique index
+for (let j = 1; j < dupArr.length; j++) {
+  if (dupArr[j] !== dupArr[i]) {
+    i++;
+    dupArr[i] = dupArr[j];
+    // console.log(dupArr);
+  }
 }
+
+const uniqueSorted = dupArr.slice(0, i + 1);
+console.log(uniqueSorted);

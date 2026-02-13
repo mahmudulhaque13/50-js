@@ -4,17 +4,20 @@
 // }
 
 // 1 থেকে 50 পর্যন্ত even সংখ্যা print করো
-for (let i = 1; i <= 50; i++) {
-  if (i % 2 === 0) {
-    console.log(i);
-  }
-}
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
 
 // for (let i = 2; i <= 50; i += 2) {
 //   console.log(i);
 // }
 
 // 10 থেকে 1 পর্যন্ত reverse loop চালাও
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
 
 // একটি সংখ্যার নামতা print করো
 

@@ -20,13 +20,23 @@
 // }
 
 // একটি সংখ্যার নামতা print করো
-let number = 5;
+// let number = 5;
 
-for (let i = 1; i <= 10; i++) {
-  console.log(number + " x " + i + " = " + number * i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log(number + " x " + i + " = " + number * i);
+// }
 
 // 1–100 এর মধ্যে 3 দিয়ে divisible সংখ্যা বের করো
+// 1 থেকে 50 পর্যন্ত even সংখ্যা print করো
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//   }
+// }
+
+for (let i = 3; i <= 100; i += 3) {
+  console.log(i);
+}
 
 // loop ব্যবহার করে sum বের করো
 

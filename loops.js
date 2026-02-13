@@ -34,10 +34,27 @@
 //   }
 // }
 
-for (let i = 3; i <= 100; i += 3) {
-  console.log(i);
-}
+// for (let i = 3; i <= 100; i += 3) {
+//   console.log(i);
+// }
 
 // loop ব্যবহার করে sum বের করো
+// let sum = 0;
+
+// for (let i = 1; i <= 10; i++) {
+//   sum += i;
+// }
+
+// console.log(sum);
+// // while loop
+let i = 1;
+let sum = 0;
+
+while (i <= 19) {
+  sum += i;
+  i++;
+}
+
+console.log("Total Sum =", sum);
 
 // break ব্যবহার করে loop থামাও

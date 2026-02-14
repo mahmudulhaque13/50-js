@@ -58,12 +58,22 @@
 // console.log(largest);
 
 // array reverse করো
-const numbers = [10, 20, 30, 40, 50];
+// const numbers = [10, 20, 30, 40, 50];
 
-numbers.reverse();
+// numbers.reverse();
 
-console.log(numbers);
+// console.log(numbers);
 
 // array sort করো (numeric)
+// const numbers = [10, 2, 50, 25, 5];
+
+// numbers.sort((a, b) => a - b);
+
+// console.log(numbers);
 
 // array থেকে duplicate remove করো
+const numbers = [10, 20, 20, 30, 40, 40, 50];
+
+const uniqueNumbers = [...new Set(numbers)];
+
+console.log(uniqueNumbers);

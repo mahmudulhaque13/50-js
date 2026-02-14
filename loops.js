@@ -76,15 +76,15 @@
 //   console.log(i);
 // }
 
-//remove duplicates in sorted array.
-let dupArr = [1, 2, 3, 4, 1, 3];
-dupArr.sort((a, b) => a - b); // must be sorted first!! boring !!
+//j
+// let dupArr = [1, 2, 3, 4, 1, 3];
+// dupArr.sort((a, b) => a - b); // must be sorted first!! boring !!
 
-let i = 0; //last unique index
-for (let j = 1; j < dupArr.length; j++) {
-  if (dupArr[j] !== dupArr[i]) {
-    i++;
-    dupArr[i] = dupArr[j];
+// let i = 0; //last unique index
+// for (let j = 1; j < dupArr.length; j++) {
+//   if (dupArr[j] !== dupArr[i]) {
+//     i++;
+//     dupArr[i] = dupArr[j];
     // console.log(dupArr);
   }
 }

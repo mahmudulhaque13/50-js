@@ -25,17 +25,30 @@
 // console.log("Last:", last);
 
 // array এর সব সংখ্যার যোগফল বের করো
-const numbers = [10, 20, 30, 40, 50];
+// const numbers = [10, 20, 30, 40, 50];
 
-let sum = 0;
+// let sum = 0;
 
-for (let num of numbers) {
-  sum += num;
-}
+// for (let num of numbers) {
+//   sum += num;
+// }
 
-console.log("Total Sum:", sum);
+// console.log("Total Sum:", sum);
 
 // array থেকে even সংখ্যাগুলো বের করো
+// const numbers = [10, 15, 20, 25, 30, 35];
+
+// for (let num of numbers) {
+//   if (num % 2 === 0) {
+//     console.log(num);
+//   }
+// }
+
+const numbers = [10, 15, 20, 25, 30, 35];
+
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+console.log(evenNumbers);
 
 // array এর মধ্যে largest number বের করো
 

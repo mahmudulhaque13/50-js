@@ -44,15 +44,25 @@
 //   }
 // }
 
-const numbers = [10, 15, 20, 25, 30, 35];
+// const numbers = [10, 15, 20, 25, 30, 35];
 
-const evenNumbers = numbers.filter((num) => num % 2 === 0);
+// const evenNumbers = numbers.filter((num) => num % 2 === 0);
 
-console.log(evenNumbers);
+// console.log(evenNumbers);
 
 // array এর মধ্যে largest number বের করো
+// const numbers = [10, 45, 22, 89, 5];
+
+// let largest = Math.max(...numbers);
+
+// console.log(largest);
 
 // array reverse করো
+const numbers = [10, 20, 30, 40, 50];
+
+numbers.reverse();
+
+console.log(numbers);
 
 // array sort করো (numeric)
 

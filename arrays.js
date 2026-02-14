@@ -9,13 +9,31 @@
 // }
 
 // array এর length বের করো
-
-const numbers = [10, 20, 30, 40, 50];
-console.log(numbers.length);
+// const numbers = [10, 20, 30, 40, 50];
+// console.log(numbers.length);
 
 // array থেকে প্রথম ও শেষ element বের করো
+// const numbers = [10, 20, 30, 40, 50];
+
+// //--- প্রথম element
+// let first = numbers[0];
+
+// // ----শেষ element
+// let last = numbers[numbers.length - 1];
+
+// console.log("First:", first);
+// console.log("Last:", last);
 
 // array এর সব সংখ্যার যোগফল বের করো
+const numbers = [10, 20, 30, 40, 50];
+
+let sum = 0;
+
+for (let num of numbers) {
+  sum += num;
+}
+
+console.log("Total Sum:", sum);
 
 // array থেকে even সংখ্যাগুলো বের করো
 

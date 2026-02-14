@@ -17,15 +17,21 @@
 
 // console.log(hasWord);
 
-const sentence = "I love JavaScript programming";
+// const sentence = "I love JavaScript programming";
 
-if (sentence.indexOf("JavaScript") !== -1) {
-  console.log("Word found!");
-} else {
-  console.log("Word not found!");
-}
+// if (sentence.indexOf("JavaScript") !== -1) {
+//   console.log("Word found!");
+// } else {
+//   console.log("Word not found!");
+// }
 
 // একটি sentence থেকে সব word আলাদা করো
+const sentence = "I love JavaScript programming";
+
+// space দিয়ে split করলে সব word আলাদা হবে
+const words = sentence.split(" ");
+
+console.log(words);
 
 // string reverse করো
 
